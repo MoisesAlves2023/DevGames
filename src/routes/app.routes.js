@@ -10,6 +10,8 @@ export default function AppRoutes(){
             <AppStack.Screen
             name="Home"
             component={Home}
+            options={
+                {headerShown:false}}
             />
         
         </AppStack.Navigator>
