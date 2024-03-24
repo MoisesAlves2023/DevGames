@@ -1,10 +1,11 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function ListCategoryes({ category }) {
     return (
         <View style={styles.containerCategories}>
-            <TouchableOpacity style={styles.categories}>
+            <TouchableOpacity style={styles.categories} >
                 {category && <Text style={{ color: 'white',fontSize: 18, fontWeight: 'bold' }}>{category.name}</Text>}
             </TouchableOpacity>
         </View>

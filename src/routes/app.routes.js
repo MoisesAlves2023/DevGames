@@ -18,8 +18,7 @@ export default function AppRoutes(){
             <AppStack.Screen
             name = "Details"
             component={Details}
-            options={
-                title="Detalhes"
+            options={{headerShown:false}
             }
             />
         
