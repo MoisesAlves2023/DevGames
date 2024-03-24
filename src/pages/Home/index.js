@@ -3,7 +3,6 @@ import { Text, View, StyleSheet, TouchableOpacity, TextInput, Alert, ActivityInd
 import Feather from 'react-native-vector-icons/Feather';
 import ListCategoryes from '../../components/ListCategoryes';
 import api from '../../services/api';
-import { useIsFocused } from '@react-navigation/native';
 import { useFocusEffect } from '@react-navigation/native';
 import ListGames from '../../components/ListGames';
 

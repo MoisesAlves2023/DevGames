@@ -1,9 +1,13 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import {useNavigation} from "@react-navigation/native"
 
 export default function ListGames({ games }) {
+  const navigation = useNavigation()
   return (
-    <TouchableOpacity styles={styles.container}>
+    <TouchableOpacity 
+    onPress={()=> navigation.navigate("Details",{Details: games.slug})}
+    styles={styles.container}>
       <View style={{ marginHorizontal: 10, marginVertical: 10 }}>
         <Image style={styles.image} source={{ uri: games.background_image }} />
       </View>
